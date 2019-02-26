@@ -1,5 +1,4 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404
 from .models import Book
 
 
@@ -9,4 +8,5 @@ def index(request):
     return render(request, 'index.html', context)
 
 def detail(request, book_id):
-    return HttpResponse("Hello, detail world.")
+    book = get_object_or_404(Book, pk=book_id)
+    return render(request, 'detail.html', {'book': book})
