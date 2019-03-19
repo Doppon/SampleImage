@@ -1,6 +1,3 @@
 ## リファレンス
 - [Managing files | Django documentation | Django](https://docs.djangoproject.com/en/2.1/topics/files/)
 - [画像やファイルのフィールドはどう使うのですか？](https://docs.djangoproject.com/ja/2.1/faq/usage/#how-do-i-use-image-and-file-fields)
-
-## プレビュー
-![サンプル](https://github.com/Doppon/SampleImage/blob/master/media/images/sample.png)
