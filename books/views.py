@@ -1,11 +1,13 @@
 from django.shortcuts import render, get_object_or_404
+from django.views import generic
 from .models import Book
 
 
-def index(request):
-    book_list = Book.objects.order_by('-created_at')
-    context = {'book_list': book_list}
-    return render(request, 'index.html', context)
+class IndexView(generic.ListView):
+	model = Book
+	ordering = ['-created_at']
+	template_name = 'index.html'
+
 
 def detail(request, book_id):
     book = get_object_or_404(Book, pk=book_id)
