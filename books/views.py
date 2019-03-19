@@ -13,6 +13,3 @@ class DetailView(generic.DeleteView):
 	model = Book
 	template_name = 'detail.html'
 
-# def detail(request, book_id):
-#     book = get_object_or_404(Book, pk=book_id)
-#     return render(request, 'detail.html', {'book': book})
