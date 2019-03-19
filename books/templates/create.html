@@ -1,0 +1,7 @@
+<h1>新規作成</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <table>{{form.as_table}}</table>
+    <button type="submit">登録</button>
+</form>

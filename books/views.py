@@ -9,6 +9,12 @@ class IndexView(generic.ListView):
 	template_name = 'index.html'
 
 
+class CreateView(generic.edit.CreateView):
+	model = Book
+	fields = '__all__'
+	template_name = 'create.html'
+
+
 class DetailView(generic.DeleteView):
 	model = Book
 	template_name = 'detail.html'
