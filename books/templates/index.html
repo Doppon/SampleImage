@@ -5,7 +5,6 @@
 
 
 {% block body_content %}
-
 {% if object_list %}
     <ul>
     {% for book in object_list %}
@@ -17,5 +16,4 @@
 {% endif %}
 
 <a href="{% url 'create' %}">Bookを作成する</a>
-
 {% endblock body_content %}
