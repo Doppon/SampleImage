@@ -11,7 +11,7 @@ class IndexView(generic.ListView):
 
 class CreateView(generic.edit.CreateView):
 	model = Book
-	fields = '__all__'
+	fields = ['title', 'logo'] 
 	template_name = 'create.html'
 
 
