@@ -91,3 +91,6 @@ db.sqlite3
 # image
 *.png
 *.jpg
+
+# VScode
+settings.json
