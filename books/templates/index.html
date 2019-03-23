@@ -1,5 +1,10 @@
-<title>Book一覧画面</title>
+{% extends "base.html" %}
 
+
+{% block title %}book一覧画面{% endblock %}
+
+
+{% block body_content %}
 
 {% if object_list %}
     <ul>
@@ -12,3 +17,5 @@
 {% endif %}
 
 <a href="{% url 'create' %}">Bookを作成する</a>
+
+{% endblock body_content %}
